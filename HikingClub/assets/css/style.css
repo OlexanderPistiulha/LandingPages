@@ -22,7 +22,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   color: #000000;
@@ -30,7 +30,7 @@ h3 {
 
 a,
 p {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -57,13 +57,6 @@ ul {
   margin: 0 auto;
 }
 
-@media screen and (min-height: 1500px) {
-  .conteiner {
-    position: relative;
-    min-height: 100vh;
-  }
-}
-
 .header {
   min-height: 100vh;
   background-image: url(../img/bg.png);
@@ -72,8 +65,14 @@ ul {
   background-position: 50% 50%;
 }
 
+@media screen and (min-height: 1500px) {
+  .header {
+    position: relative;
+  }
+}
+
 .header__body {
-  margin: 115px 0;
+  margin: 60px 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -94,14 +93,15 @@ ul {
   }
 }
 
-@media screen and (min-height: 1500px) {
+@media screen and (min-height: 1500px) and (min-width: 1300px) {
   .header__body {
     position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    left: 0;
-    right: 0;
+    left: 50%;
+    min-width: 1300px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    min-height: 100vh;
   }
 }
 
@@ -153,10 +153,23 @@ ul {
   margin-bottom: 27px;
 }
 
+@media screen and (max-width: 650px) {
+  .header__above-tittle {
+    font-size: 28px;
+  }
+}
+
 .header__tittle {
+  display: inline-block;
   position: relative;
   font-size: 74.4px;
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 650px) {
+  .header__tittle {
+    font-size: 66px;
+  }
 }
 
 .header__butterfly {
@@ -171,6 +184,12 @@ ul {
   text-transform: uppercase;
   color: #000000;
   margin-bottom: 35px;
+}
+
+@media screen and (max-width: 650px) {
+  .header__subtittle {
+    font-size: 16px;
+  }
 }
 
 .header__img {
@@ -423,11 +442,25 @@ ul {
 }
 
 .tittle {
-  font-size: 45.9px;
+  font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   margin-bottom: 34px;
+}
+
+@media screen and (max-width: 1170px) {
+  .tittle {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .tittle {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -441,12 +474,16 @@ ul {
   color: #ffffff;
 }
 
+.tittle__posted {
+  color: #000000;
+}
+
 .subtittle {
   font-size: 20.9px;
   font-weight: 400;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1170px) {
   .subtittle {
     font-size: 16px;
   }
@@ -454,5 +491,103 @@ ul {
 
 .subtittle__largest {
   color: #ffffff;
+}
+
+.subtittle__posted {
+  color: #000000;
+  margin-bottom: 28px;
+  line-height: 29px;
+}
+
+.posted__body {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 90px 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .posted__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.posted__img-wrapp {
+  width: 40%;
+}
+
+@media screen and (max-width: 1000px) {
+  .posted__img-wrapp {
+    width: 500px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 40px;
+  }
+}
+
+.posted__img {
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+@media screen and (max-width: 1000px) {
+  .posted__img {
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .posted__img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .posted__img {
+    width: 270px;
+    height: 270px;
+  }
+}
+
+.posted__content-wrapp {
+  width: 56%;
+}
+
+@media screen and (max-width: 1000px) {
+  .posted__content-wrapp {
+    width: 100%;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
