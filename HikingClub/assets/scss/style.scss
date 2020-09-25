@@ -64,7 +64,10 @@
 
     &__collumn-two {
         display: block;
+        // position: relative;
         width: 50%;
+        border-radius: 50%;
+        // box-shadow: 0px 172px 17px -81px rgba(0, 0, 0, 0.75);
 
         @media screen and (max-width: 1400px) {
             width: 40%;
@@ -74,6 +77,16 @@
             display: none;
         }
     }
+
+    // &__collumn-two::after {
+    //     position: absolute;
+    //     bottom: 30%;
+    //     left: 0;
+    //     right: 0;
+    //     width: 100%;
+    //     height: 30%;
+    //     background-color: red;
+    // }
 
     &__above-tittle {
         font-size: 39.6px;
@@ -275,5 +288,52 @@
 
     &__active {
         left: 0;
+    }
+}
+
+
+// =========================================largest screen=========================================
+.largest {
+    background-image: url(../img/foot-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% center;
+
+    &__body {
+        text-align: center;
+        padding: 90px 0;
+    }
+}
+
+// ----------------------------------------- h2 tittle-----------------------------------------
+.tittle {
+    font-size: 45.9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 34px;
+
+    @media screen and (max-width: 650px) {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+
+    &__largest {
+        color: #ffffff;
+    }
+}
+
+// --------------------------------------p subtittle for h2--------------------------------------
+.subtittle {
+    font-size: 20.9px;
+    font-weight: 400;
+
+    @media screen and (max-width: 650px) {
+        font-size: 16px;
+
+    }
+
+    &__largest {
+        color: #ffffff;
     }
 }

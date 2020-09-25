@@ -133,6 +133,7 @@ ul {
 .header__collumn-two {
   display: block;
   width: 50%;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 1400px) {
@@ -407,5 +408,51 @@ ul {
 
 .menu-mobile__active {
   left: 0;
+}
+
+.largest {
+  background-image: url(../img/foot-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 70% center;
+}
+
+.largest__body {
+  text-align: center;
+  padding: 90px 0;
+}
+
+.tittle {
+  font-size: 45.9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 34px;
+}
+
+@media screen and (max-width: 650px) {
+  .tittle {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+}
+
+.tittle__largest {
+  color: #ffffff;
+}
+
+.subtittle {
+  font-size: 20.9px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 650px) {
+  .subtittle {
+    font-size: 16px;
+  }
+}
+
+.subtittle__largest {
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
