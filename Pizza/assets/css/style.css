@@ -213,6 +213,7 @@ a {
   line-height: 1.3;
   font-weight: 400;
   margin-bottom: 38px;
+  text-align: center;
 }
 
 .title-h2__light {
@@ -463,7 +464,124 @@ a {
   text-align: center;
 }
 
-.title-h2 {
-  text-align: center;
+.forth-screen {
+  padding: 64px 0;
+}
+
+.offer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .offer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .offer {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+
+.offer__img {
+  width: 613px;
+  height: 613px;
+  margin-right: 66px;
+}
+
+@media screen and (max-width: 1366px) {
+  .offer__img {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .offer__img {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .offer__img {
+    width: 270px;
+    height: 270px;
+  }
+}
+
+.offer:nth-last-child(even) .offer__content {
+  -webkit-box-ordinal-group: 0;
+  -webkit-order: -1;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+@media screen and (max-width: 1200px) {
+  .offer:nth-last-child(even) .offer__content {
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+}
+
+.offer:nth-last-child(even) .offer__img {
+  margin-right: 0px;
+  margin-left: 66px;
+}
+
+@media screen and (max-width: 1200px) {
+  .offer:nth-last-child(even) .offer__img {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
+.offer__title {
+  font-family: "Open Sans";
+  font-size: 58.4px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 52px;
+}
+
+@media screen and (max-width: 1366px) {
+  .offer__title {
+    font-size: 35px;
+  }
+}
+
+.offer__text {
+  font-family: "Open Sans";
+  font-size: 29.2px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #2f3135;
+  margin-bottom: 52px;
+}
+
+@media screen and (max-width: 1366px) {
+  .offer__text {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
