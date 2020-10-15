@@ -252,6 +252,14 @@ a {
   margin: 0 auto;
 }
 
+.subtitle-h2__dark {
+  color: #222328;
+}
+
+.subtitle-h2__light {
+  color: #fff;
+}
+
 @media screen and (max-width: 1366px) {
   .subtitle-h2 {
     font-size: 20px;
@@ -583,5 +591,30 @@ a {
   .offer__text {
     font-size: 18px;
   }
+}
+
+.fifth-screen {
+  background-image: url(../img/pizza-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-height: 100vh;
+  padding: 60px 0;
+}
+
+.fifth-screen__content {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

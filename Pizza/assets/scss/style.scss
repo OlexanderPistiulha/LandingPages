@@ -246,6 +246,14 @@
     width: 60%;
     margin: 0 auto;
 
+    &__dark {
+        color: $text-color-two-light;
+    }
+
+    &__light {
+        color: #fff;
+    }
+
     @media screen and (max-width: 1366px) {
         font-size: 20px;
     }
@@ -482,5 +490,25 @@
         @media screen and (max-width: 1366px) {
             font-size: 18px;
         }
+    }
+}
+
+// -----------------------------fifth screen-----------------------------
+.fifth-screen {
+    background-image: url(../img/pizza-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 60px 0;
+
+    &__body {}
+
+    &__content {
+        text-align: center;
     }
 }
