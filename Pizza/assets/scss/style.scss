@@ -216,7 +216,7 @@
     margin-bottom: 38px;
 
     &__light {
-        color: $text-color-two-light;
+        color: $h1-color;
     }
 
     &__dark {
@@ -339,4 +339,51 @@
             text-align: center;
         }
     }
+}
+
+// -----------------------------------------third-screen-----------------------------------------
+
+.third-screen {
+    padding: 48px 0;
+    background-color: #27292c;
+
+    &__body {}
+
+    &__content {}
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 70px;
+        margin-top: 60px;
+    }
+
+    &__item {
+        font-size: 18px;
+        flex: 1 45%;
+        min-width: 270px;
+        color: $text-color-one;
+        margin-right: 30px;        
+
+        &:nth-last-child(1) {
+            margin-right: 0;
+        }
+
+        @media screen and (max-width: 750px) {
+           margin-bottom: 30px;          
+        }
+        @media screen and (max-width: 719px) {
+           margin-right: 0;         
+         }
+    }
+
+    &__button {
+        text-align: center;
+    }
+}
+
+.title-h2 {
+    text-align: center;
 }
