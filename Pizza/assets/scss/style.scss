@@ -5,7 +5,7 @@
 .wrapper {}
 
 .conteiner {
-    max-width: 1440px;
+    max-width: 1500px;
     width: 100%;
     margin: 0 auto;
     padding: 0px 80px;
@@ -510,5 +510,164 @@
 
     &__content {
         text-align: center;
+    }
+}
+
+// -----------------------------sixth-screen-----------------------------
+
+.sixth-screen {
+    padding: 60px 0;
+
+    &__body {}
+
+    &__content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        flex: 1 15%;
+        min-width: 270px;
+        margin: 30px 15px;
+        //margin-bottom: 60px;
+
+        @media screen and (max-width: 1000px) {
+            text-align: center;
+            margin: 30px 5px;
+        }
+
+
+
+    }
+
+    &__item-title {
+        text-align: center;
+        font-family: $title-font;
+        font-size: 41.7px;
+        line-height: 33px;
+        font-weight: 400;
+        color: $h2-color;
+        margin-bottom: 40px;
+
+        @media screen and (max-width: 1366px) {
+            font-size: 30px;
+        }
+    }
+
+    &__item-text {
+        font-family: $primary-font;
+        font-size: 18.8px;
+        line-height: 24px;
+        font-weight: 400;
+        color: $text-color-two-dark;
+
+        @media screen and (max-width: 1366px) {
+            font-size: 18px;
+        }
+    }
+}
+
+// ------------------------------seventh-screen------------------------------
+
+.seventh-screen {
+    padding: 30px 0;
+    background-image: url(../img/form-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__body {}
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        text-align: center;
+    }
+
+    &__title {
+        font-family: $primary-font;
+        text-transform: uppercase;
+        font-size: 75px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: $h1-color;
+        margin-bottom: 70px;
+
+        @media screen and (max-width: 1366px) {
+            font-size: 60px;
+        }
+
+        @media screen and (max-width: 550px) {
+            font-size: 35px;
+        }
+
+    }
+
+    &__text {
+        font-family: $primary-font;
+        font-size: 29.8px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: $h1-color;
+        margin-bottom: 70px;
+
+        @media screen and (max-width: 1366px) {
+            font-size: 20px;
+        }
+    }
+}
+
+.get-mail {
+    position: relative;
+    width: 60%;
+
+    @media screen and (max-width: 1000px) {
+        width: 80%;
+    }
+
+    @media screen and (max-width: 700px) {
+        width: 95%;
+    }
+
+    &__input-wrapp {
+        width: 100%;
+    }
+
+    &__input {
+        width: 100%;
+        font-family: $primary-font;
+        font-size: 18px;
+        padding: 18px 200px 18px 30px;
+        border-radius: 25px;
+        font-weight: 300;
+        border-width: 0px;
+
+        @media screen and (max-width: 1366px) {
+            padding: 15px 200px 15px 30px;
+        }
+
+        @media screen and (max-width: 700px) {
+            padding: 15px 30px 15px 30px;
+        }
+
+    }
+
+    & button {
+        position: absolute;
+        top: -0.5px;
+        right: -1px;
+
+        @media screen and (max-width: 700px) {
+            margin-top: 20px;
+            position: relative;
+            background-color: $button-bg-light;
+            color: $button-color-light-text;
+        }
     }
 }

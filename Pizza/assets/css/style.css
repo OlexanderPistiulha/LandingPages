@@ -24,8 +24,34 @@ a {
   text-decoration: none;
 }
 
+input {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  outline: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  outline: none;
+}
+
 .conteiner {
-  max-width: 1440px;
+  max-width: 1500px;
   width: 100%;
   margin: 0 auto;
   padding: 0px 80px;
@@ -616,5 +642,199 @@ a {
 
 .fifth-screen__content {
   text-align: center;
+}
+
+.sixth-screen {
+  padding: 60px 0;
+}
+
+.sixth-screen__content {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.sixth-screen__item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 15%;
+      -ms-flex: 1 15%;
+          flex: 1 15%;
+  min-width: 270px;
+  margin: 30px 15px;
+}
+
+@media screen and (max-width: 1000px) {
+  .sixth-screen__item {
+    text-align: center;
+    margin: 30px 5px;
+  }
+}
+
+.sixth-screen__item-title {
+  text-align: center;
+  font-family: "Reey";
+  font-size: 41.7px;
+  line-height: 33px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1366px) {
+  .sixth-screen__item-title {
+    font-size: 30px;
+  }
+}
+
+.sixth-screen__item-text {
+  font-family: "Open Sans";
+  font-size: 18.8px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #2f3135;
+}
+
+@media screen and (max-width: 1366px) {
+  .sixth-screen__item-text {
+    font-size: 18px;
+  }
+}
+
+.seventh-screen {
+  padding: 30px 0;
+  background-image: url(../img/form-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.seventh-screen__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.seventh-screen__title {
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  font-size: 75px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 70px;
+}
+
+@media screen and (max-width: 1366px) {
+  .seventh-screen__title {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .seventh-screen__title {
+    font-size: 35px;
+  }
+}
+
+.seventh-screen__text {
+  font-family: "Open Sans";
+  font-size: 29.8px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 70px;
+}
+
+@media screen and (max-width: 1366px) {
+  .seventh-screen__text {
+    font-size: 20px;
+  }
+}
+
+.get-mail {
+  position: relative;
+  width: 60%;
+}
+
+@media screen and (max-width: 1000px) {
+  .get-mail {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .get-mail {
+    width: 95%;
+  }
+}
+
+.get-mail__input-wrapp {
+  width: 100%;
+}
+
+.get-mail__input {
+  width: 100%;
+  font-family: "Open Sans";
+  font-size: 18px;
+  padding: 18px 200px 18px 30px;
+  border-radius: 25px;
+  font-weight: 300;
+  border-width: 0px;
+}
+
+@media screen and (max-width: 1366px) {
+  .get-mail__input {
+    padding: 15px 200px 15px 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .get-mail__input {
+    padding: 15px 30px 15px 30px;
+  }
+}
+
+.get-mail button {
+  position: absolute;
+  top: -0.5px;
+  right: -1px;
+}
+
+@media screen and (max-width: 700px) {
+  .get-mail button {
+    margin-top: 20px;
+    position: relative;
+    background-color: #fefefe;
+    color: #2e3034;
+  }
 }
 /*# sourceMappingURL=style.css.map */
