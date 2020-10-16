@@ -13,25 +13,25 @@ window.addEventListener('DOMContentLoaded', function () {
     });
     // search element----------------------------------------------------------------
 
-    let header = document.querySelector('.header'),
-        headerMenuDesktop = document.querySelector('.menu-desktop__absolute'), 
-        firstScreen = document.querySelector('.first-screen');
+
+    // header adhere to scroll-----------------------------------------------------
+    let header = document.querySelector('.header');
+        // headerMenuDesktop = document.querySelector('.menu-desktop__absolute'), 
+        // firstScreen = document.querySelector('.first-screen');
 
     window.addEventListener('scroll', function () {
         let scrolled = document.documentElement.scrollTop;
 
-        if (scrolled < 80) {
-            header.classList.add('header');
-            headerMenuDesktop.classList.remove('menu-desktop__fixed');
+        if (scrolled < 10) {
+            header.classList.add('header__absolute');            
             header.classList.remove('header__fixed');
-            headerMenuDesktop.classList.add('menu-desktop__absolute');
-        } else if (scrolled > 80) {
-            header.classList.remove('header');
-            headerMenuDesktop.classList.remove('menu-desktop__absolute');
+          
+        } else if (scrolled > 10) {
+            header.classList.remove('header__absolute');            
             header.classList.add('header__fixed');
-            headerMenuDesktop.classList.add('menu-desktop__fixed');
 
         }
     });
+    // header adhere to scroll-----------------------------------------------------
 
 });
