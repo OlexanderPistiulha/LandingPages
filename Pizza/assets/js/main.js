@@ -16,22 +16,29 @@ window.addEventListener('DOMContentLoaded', function () {
 
     // header adhere to scroll-----------------------------------------------------
     let header = document.querySelector('.header');
-        // headerMenuDesktop = document.querySelector('.menu-desktop__absolute'), 
-        // firstScreen = document.querySelector('.first-screen');
 
     window.addEventListener('scroll', function () {
         let scrolled = document.documentElement.scrollTop;
 
         if (scrolled < 10) {
-            header.classList.add('header__absolute');            
+            header.classList.add('header__absolute');
             header.classList.remove('header__fixed');
-          
+
         } else if (scrolled > 10) {
-            header.classList.remove('header__absolute');            
+            header.classList.remove('header__absolute');
             header.classList.add('header__fixed');
 
         }
     });
     // header adhere to scroll-----------------------------------------------------
 
+    //  burger--------------------------------------------------------------------
+
+
+    let burger = document.querySelector('.burger');
+
+    burger.addEventListener('click', () => {
+        burger.classList.toggle("burger__active");
+    });
+    //  burger--------------------------------------------------------------------
 });
