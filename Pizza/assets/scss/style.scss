@@ -2,6 +2,10 @@
 @import "__common.scss";
 @import "__variables.scss";
 
+// .active {
+//     color: #7ed817;
+//   }
+
 .wrapper {
     position: relative;
     overflow: hidden;
@@ -79,6 +83,12 @@
         padding: 45px 0;
     }
 
+    
+    &__border-absolute{
+        z-index: 1000;
+        padding: 10px 0;
+        border-bottom: 2px solid #fff;
+    }
     &__fixed {
         z-index: 1000;
         width: 100%;
@@ -112,7 +122,7 @@
     }
 
     &__item {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
     &__link {

@@ -11,40 +11,39 @@
 <body>
     <div class="wrapper">
 
-        <section class="first-screen">
+        <section id="home" class="first-screen">
             <nav class="menu-mobile">
-                <ul class="menu-mobile__list">
+                <ul class="menu-mobile__list menu">
                     <li class="menu-mobile__item">
-                        <a href="" class="menu-mobile__link">home</a>
+                        <a href="#home" class="menu-mobile__link">home</a>
                     </li>
                     <li class="menu-mobile__item">
-                        <a href="" class="menu-mobile__link">menu</a>
+                        <a href="#menu" class="menu-mobile__link">menu</a>
                     </li>
                     <li class="menu-mobile__item">
-                        <a href="" class="menu-mobile__link">our story</a>
+                        <a href="#story" class="menu-mobile__link">our story</a>
                     </li>
                     <li class="menu-mobile__item">
-                        <a href="" class="menu-mobile__link">contact us</a>
+                        <a href="#contact" class="menu-mobile__link">contact us</a>
                     </li>
                 </ul>
             </nav>
 
             <div class="header header__absolute">
-
                 <div class="conteiner">
                     <nav class="menu-desktop ">
-                        <ul class="menu-desktop__list">
+                        <ul class="menu-desktop__list menu">
                             <li class="menu-desktop__item">
-                                <a href="" class="menu-desktop__link">home</a>
+                                <a href="#home" class="menu-desktop__link">home</a>
                             </li>
                             <li class="menu-desktop__item">
-                                <a href="" class="menu-desktop__link">menu</a>
+                                <a href="#menu" class="menu-desktop__link">menu</a>
                             </li>
                             <li class="menu-desktop__item">
-                                <a href="" class="menu-desktop__link">our story</a>
+                                <a href="#story" class="menu-desktop__link">our story</a>
                             </li>
                             <li class="menu-desktop__item">
-                                <a href="" class="menu-desktop__link">contact us</a>
+                                <a href="#contact" class="menu-desktop__link">contact us</a>
                             </li>
                         </ul>
                         <div class="burger">
@@ -82,7 +81,7 @@
             </div>
         </section>
 
-        <section class="second-screen">
+        <section id="menu" class="second-screen">
             <div class="conteiner">
                 <div class="second-screen__body">
                     <div class="second-screen__content">
@@ -129,7 +128,7 @@
             </div>
         </section>
 
-        <section class="third-screen">
+        <section id="story" class="third-screen">
             <div class="conteiner">
                 <div class="third-screen__body">
                     <div class="third-screen__content">
@@ -172,7 +171,7 @@
                                         voluptates repellat qui ipsum distinctio corporis perferendis esse dolorum.
                                         Dolorem.</p>
                                     <a href="#" class="button button__dark">
-                                        read moree
+                                        read more
                                     </a>
                                 </div>
                             </div>
@@ -187,7 +186,7 @@
                                         voluptates repellat qui ipsum distinctio corporis perferendis esse dolorum.
                                         Dolorem.</p>
                                     <a href="#" class="button button__dark">
-                                        read moree
+                                        read more
                                     </a>
                                 </div>
                             </div>
@@ -238,7 +237,7 @@
             </div>
         </section>
 
-        <section class="seventh-screen">
+        <section id="contact" class="seventh-screen">
             <div class="conteiner">
                 <div class="seventh-screen__body">
                     <div class="seventh-screen__content">
@@ -264,6 +263,26 @@
     </div>
 
     <script src="assets/js/main.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
+    <!-- <script>
+        $(function () {
+            $('.menu [href]').each(function () {
+                if (this.href == window.location.href) {
+                    $(this).addClass('active');
+                }
+            });
+        });
+    </script> -->
+
+    <!-- <script>
+        document.querySelectorAll('.menu li a').forEach(function (el) {
+            if (window.location.pathname.indexOf(el.getAttribute('href')) > -1) {
+                el.classList.add('active');
+            }
+        });
+    </script> -->
+
+
 </body>
 
 </html>
