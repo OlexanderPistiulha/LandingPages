@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/leaf.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -31,8 +32,8 @@
 
             <div class="header header__absolute">
                 <div class="conteiner">
-                    <nav class="menu-desktop ">
-                        <ul class="menu-desktop__list menu">
+                    <nav class="menu-desktop" id="menu-center">
+                        <ul id="mDL" class="menu-desktop__list nav">
                             <li class="menu-desktop__item">
                                 <a href="#home" class="menu-desktop__link menu-desktop__link-active">home</a>
                             </li>
@@ -263,26 +264,8 @@
     </div>
 
     <script src="assets/js/main.js"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
-    <!-- <script>
-        $(function () {
-            $('.menu [href]').each(function () {
-                if (this.href == window.location.href) {
-                    $(this).addClass('active');
-                }
-            });
-        });
-    </script> -->
-
-    <!-- <script>
-        document.querySelectorAll('.menu li a').forEach(function (el) {
-            if (window.location.pathname.indexOf(el.getAttribute('href')) > -1) {
-                el.classList.add('active');
-            }
-        });
-    </script> -->
-
-
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="assets/js/menuActiveItem.js"></script>
 </body>
 
 </html>
