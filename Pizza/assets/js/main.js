@@ -36,9 +36,11 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
     let burger = document.querySelector('.burger');
+    let menuMobile = document.querySelector('.menu-mobile');
 
     burger.addEventListener('click', () => {
         burger.classList.toggle("burger__active");
+        menuMobile.classList.toggle("menu-mobile__active");
     });
     //  burger--------------------------------------------------------------------
 });
