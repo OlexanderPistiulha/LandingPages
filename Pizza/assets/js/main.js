@@ -32,10 +32,11 @@ window.addEventListener('DOMContentLoaded', function () {
     });
     // header adhere to scroll-----------------------------------------------------
 
-    //  burger--------------------------------------------------------------------
+    //  burger and mobile menu----------------------------------------------------
 
     let burger = document.querySelector('.burger');
     let menuMobile = document.querySelector('.menu-mobile');
+
 
     burger.addEventListener('click', () => {
         burger.classList.toggle("burger__active");
@@ -43,14 +44,20 @@ window.addEventListener('DOMContentLoaded', function () {
         checkMenuBorder();
     });
 
+    document.querySelector('.menu-mobile__list').addEventListener('click', (e) => {
+        if (e.target.classList.contains('menu-mobile__link') || e.target.classList.contains('menu-mobile__item') ) {
+            burger.classList.toggle("burger__active");
+            menuMobile.classList.toggle("menu-mobile__active");
+        } else return;
+    });
 
 
     function checkMenuBorder() {
         if (menuMobile.classList.contains('menu-mobile__active') && header.classList.contains('header__absolute')) {
-           header.classList.add('header__border-absolute');
+            header.classList.add('header__border-absolute');
         } else {
             header.classList.remove('header__border-absolute');
         }
     }
-    //  burger--------------------------------------------------------------------
+    //  burger and mobile menu----------------------------------------------------
 });

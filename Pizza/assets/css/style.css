@@ -188,13 +188,13 @@ button {
 }
 
 .menu-mobile__item {
-  margin-bottom: 40px;
+  padding: 20px 0;
 }
 
 .menu-mobile__link {
+  display: inline-block;
   font-family: "Open Sans";
   font-size: 18px;
-  line-height: 1.2;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2em;

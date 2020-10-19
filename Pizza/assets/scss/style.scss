@@ -83,12 +83,13 @@
         padding: 45px 0;
     }
 
-    
-    &__border-absolute{
+
+    &__border-absolute {
         z-index: 1000;
         padding: 10px 0;
         border-bottom: 2px solid #fff;
     }
+
     &__fixed {
         z-index: 1000;
         width: 100%;
@@ -122,13 +123,14 @@
     }
 
     &__item {
-        margin-bottom: 40px;
+       padding: 20px 0;
     }
 
     &__link {
+        display: inline-block;
         font-family: $primary-font;
         font-size: 18px;
-        line-height: 1.2;
+        // line-height: 2;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.2em;
