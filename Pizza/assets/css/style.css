@@ -72,6 +72,27 @@ button {
   }
 }
 
+.page {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-image: url(../img/form-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
 .first-screen {
   position: relative;
   background-image: url(../img/header-bg.png);
@@ -201,6 +222,10 @@ button {
   color: #ffffff;
 }
 
+.menu-mobile__link-active {
+  color: #678701;
+}
+
 .menu-desktop {
   display: -webkit-box;
   display: -webkit-flex;
@@ -258,6 +283,10 @@ button {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #ffffff;
+}
+
+.menu-desktop__link-active {
+  color: #678701;
 }
 
 .burger {
@@ -479,6 +508,8 @@ button {
   border-radius: 25px;
   font-weight: 800;
   cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .button__light {
@@ -486,9 +517,17 @@ button {
   color: #2e3034;
 }
 
+.button__light:hover {
+  color: #678701;
+}
+
 .button__dark {
   background-color: #343434;
   color: #fff;
+}
+
+.button__dark:hover {
+  background-color: #678701;
 }
 
 @media screen and (max-width: 1366px) {
@@ -655,6 +694,13 @@ button {
   max-width: 334px;
   max-height: 334px;
   margin-bottom: 30px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.plate-list__img:hover {
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
 }
 
 @media screen and (max-width: 1366px) {

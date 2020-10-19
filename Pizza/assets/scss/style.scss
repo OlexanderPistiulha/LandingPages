@@ -2,9 +2,7 @@
 @import "__common.scss";
 @import "__variables.scss";
 
-// .active {
-//     color: #7ed817;
-//   }
+
 
 .wrapper {
     position: relative;
@@ -21,6 +19,20 @@
         padding: 0px 30px;
     }
 }
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../img/form-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+
 
 .first-screen {
     position: relative;
@@ -101,6 +113,7 @@
     }
 }
 
+//  menu mobile-------------------------------------------------
 .menu-mobile {
     position: fixed;
     z-index: 999;
@@ -123,7 +136,7 @@
     }
 
     &__item {
-       padding: 20px 0;
+        padding: 20px 0;
     }
 
     &__link {
@@ -135,6 +148,10 @@
         text-transform: uppercase;
         letter-spacing: 0.2em;
         color: #ffffff;
+    }
+
+    &__link-active {
+        color: rgb(103, 135, 1);
     }
 }
 
@@ -173,6 +190,10 @@
         text-transform: uppercase;
         letter-spacing: 0.2em;
         color: #ffffff;
+    }
+
+    &__link-active {
+        color: rgb(103, 135, 1);
     }
 }
 
@@ -354,15 +375,24 @@
     border-radius: 25px;
     font-weight: 800;
     cursor: pointer;
+    transition: .5s;
 
     &__light {
         background-color: $button-bg-light;
         color: $button-color-light-text;
+
+        &:hover {
+            color: rgb(103, 135, 1);
+        }
     }
 
     &__dark {
         background-color: $button-bg-dark;
         color: $button-color-dark-text;
+
+        &:hover {
+            background-color: rgb(103, 135, 1);
+        }
     }
 
     @media screen and (max-width: 1366px) {
@@ -475,6 +505,7 @@
         align-items: center;
         flex-direction: column;
 
+
         &:nth-last-child(1) {
             margin-right: 0;
         }
@@ -488,6 +519,11 @@
         max-width: 334px;
         max-height: 334px;
         margin-bottom: 30px;
+        transition: .5s;
+
+        &:hover {
+            transform: rotate(25deg);
+        }
 
         @media screen and (max-width: 1366px) {
             max-width: 300px;
