@@ -17,20 +17,22 @@
         <ul class="menu-mobile__list">
 
         <!-- для меню стили которых прописаны вложеностью тегов -->
-        <?php wp_nav_menu(['theme_location' => 'menu-header']); ?> 
+        <!-- много параметров которые задаются в  масиве -->
+        <!-- этот вариант лучше -->
+        <!-- <?php wp_nav_menu(['theme_location' => 'menu-header']); ?> -->
 
-            <li class="menu-mobile__item">
-                <a href="#home" class="menu-mobile__link">home</a>
+        <!-- для меню стили которого написаны с помощью классов -->
+        <?php 
+            $location = get_nav_menu_locations();
+            $menu_id = $location['menu-header'];
+            $menu_items = wp_get_nav_menu_items( $menu_id);
+            foreach ($menu_items as $item) :
+        ?>
+             <li class="menu-mobile__item">
+                <a href="<?php echo $item->url; ?>" class="menu-mobile__link"><?php echo $item->title; ?></a>
             </li>
-            <li class="menu-mobile__item">
-                <a href="#menu" class="menu-mobile__link">menu</a>
-            </li>
-            <li class="menu-mobile__item">
-                <a href="#story" class="menu-mobile__link">our story</a>
-            </li>
-            <li class="menu-mobile__item">
-                <a href="#contact" class="menu-mobile__link">contact us</a>
-            </li>
+        <?php endforeach ?>    
+
         </ul>
     </nav>
 
@@ -38,18 +40,17 @@
         <div class="conteiner">
             <nav class="menu-desktop" id="menu-center">
                 <ul id="mDL" class="menu-desktop__list nav">             
-                    <li class="menu-desktop__item">
-                        <a href="#home" class="menu-desktop__link menu-desktop__link-active">home</a>
-                    </li>
-                    <li class="menu-desktop__item">
-                        <a href="#menu" class="menu-desktop__link">menu</a>
-                    </li>
-                    <li class="menu-desktop__item">
-                        <a href="#story" class="menu-desktop__link">our story</a>
-                    </li>
-                    <li class="menu-desktop__item">
-                        <a href="#contact" class="menu-desktop__link">contact us</a>
-                    </li>
+                   <!-- для меню стили которого написаны с помощью классов -->
+                    <?php 
+                        $location = get_nav_menu_locations();
+                        $menu_id = $location['menu-header'];
+                        $menu_items = wp_get_nav_menu_items( $menu_id);
+                        foreach ($menu_items as $item) :
+                    ?>
+                        <li class="menu-desktop__item">
+                            <a href="<?php echo $item->url; ?>" class="menu-desktop__link"><?php echo $item->title; ?></a>
+                        </li>
+                    <?php endforeach ?>                      
                 </ul>
                 <div class="burger">
                     <span class="burger__item"></span>
