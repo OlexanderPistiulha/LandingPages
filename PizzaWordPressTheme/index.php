@@ -1,13 +1,14 @@
 <?php get_header(); ?>
 
 <div class="conteiner">
+
                 <div class="first-screen__body">
                     <div class="first-screen__content">
-                        <h1 class="title-h1">
-                            Italian Food
+                        <h1 class="title-h1">                
+                           <?php dynamic_sidebar( 'first-screen-title' ); ?>
                         </h1>
-                        <p class="subtitle-h1">
-                            Lorem ipsum dolor sit amet.
+                        <p class="subtitle-h1">                     
+                           <?php dynamic_sidebar( 'first-screen-subtitle' ); ?>
                         </p>
                         <a href="#menu" class="button button__light">
                             read more
@@ -36,13 +37,27 @@
                         </div>
 
                         <div class="plate-list">
-                            <div class="plate-list__item">
-                                <img src="<?php my_path_images('plate-one.png') ?>" alt="" class="plate-list__img">
-                                <p class="plate-list__name">Plate One</p>
-                                <p class="plate-list__description">Lorem ipsum dolor, sit adipisicing
-                                    elit. Sint, esse...</p>
+                            <?php
+                                $query = new WP_Query( [
+                                   'post_type' => 'menu'
+                                ]);
+                                $posts = $query->posts;
+                                foreach ($posts as $post):
+                                    $id = $post->ID;
+                                    $title = $post->post_title;
+                                
+                                    $text = $post->post_content;
+                                    $img = get_the_post_thumbnail_url( $post, 'full' );
+                            ?>
+                            <div class="plate-list__item">                             
+                                <img src="<?php echo $img ?>" alt="" class="plate-list__img">
+                                <p class="plate-list__name"><?php echo $title ?></p>
+                                <p class="plate-list__description"><?php echo $text ?></p>
                             </div>
-                            <div class="plate-list__item">
+                            <?php endforeach; ?>
+
+
+                            <!-- <div class="plate-list__item">
                                 <img src="<?php my_path_images('plate-two.png') ?>" alt="" class="plate-list__img">
                                 <p class="plate-list__name">Plate Two And Something</p>
                                 <p class="plate-list__description">Lorem ipsum dolor, sit adipisicing
@@ -53,7 +68,7 @@
                                 <p class="plate-list__name">Plate Three</p>
                                 <p class="plate-list__description">Lorem ipsum dolor, sit adipisicing
                                     elit. Sint, esse...</p>
-                            </div>
+                            </div> -->
                         </div>
 
                         <div class="second-screen__button">
