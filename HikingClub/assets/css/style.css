@@ -209,6 +209,8 @@ ul {
   display: inline-block;
   background-color: #000000;
   cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .button__link {
@@ -216,6 +218,17 @@ ul {
   font-weight: 800;
   text-transform: uppercase;
   color: #ffffff;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.button:hover .button__link {
+  color: #c4832e;
+}
+
+.button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .menu {
@@ -266,6 +279,12 @@ ul {
   text-transform: uppercase;
   letter-spacing: 0.16em;
   color: #000000;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.menu__link:hover {
+  color: #c4832e;
 }
 
 .menu__item:last-child {
@@ -762,6 +781,12 @@ ul {
   font-weight: 800;
   text-transform: uppercase;
   color: #ffffff;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.call__number:hover {
+  color: #c4832e;
 }
 
 @media screen and (max-width: 890px) {
@@ -817,6 +842,14 @@ ul {
   background-color: #000000;
   border-radius: 50%;
   margin-right: 5px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.icons__item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background-color: #c4832e;
 }
 
 .icons__item:last-child {
