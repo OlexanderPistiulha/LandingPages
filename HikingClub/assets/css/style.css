@@ -527,6 +527,10 @@ ul {
 }
 
 .posted__img-wrapp {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   width: 40%;
 }
 
@@ -550,19 +554,20 @@ ul {
 }
 
 .posted__img {
-  width: 100%;
-  height: 100%;
-  max-width: 500px;
-  max-height: 500px;
+  background-image: url(../img/kevin-wolf-VTWMs1q1ic0-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0px 0px 12px -2px #0b0b0b, inset 0px 0px 2px 0px #b4b4b4;
+          box-shadow: 0px 0px 12px -2px #0b0b0b, inset 0px 0px 2px 0px #b4b4b4;
+  width: 400px;
+  height: 400px;
+  -webkit-animation: animateBg 10s linear infinite;
+          animation: animateBg 10s linear infinite;
 }
 
 @media screen and (max-width: 1000px) {
   .posted__img {
     margin: 0 auto;
-    width: 400px;
-    height: 400px;
-    -o-object-fit: fill;
-       object-fit: fill;
   }
 }
 
@@ -588,6 +593,26 @@ ul {
   .posted__content-wrapp {
     width: 100%;
     text-align: center;
+  }
+}
+
+@-webkit-keyframes animateBg {
+  0%,
+  100% {
+    border-radius: 46% 42% 61% 54% / 64% 58% 47% 45%;
+  }
+  50% {
+    border-radius: 59% 88% 100% 79% / 50% 76% 82% 100%;
+  }
+}
+
+@keyframes animateBg {
+  0%,
+  100% {
+    border-radius: 46% 42% 61% 54% / 64% 58% 47% 45%;
+  }
+  50% {
+    border-radius: 59% 88% 100% 79% / 50% 76% 82% 100%;
   }
 }
 
