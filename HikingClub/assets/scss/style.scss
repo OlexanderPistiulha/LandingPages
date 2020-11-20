@@ -626,3 +626,20 @@
         color: #ffffff;
     }
 }
+
+.title {
+    font-size: 50px;
+    margin-bottom: 0px;
+    text-align: center;
+
+    padding: 0 20px;
+
+    span {
+        display: inline-block;
+        position: relative;
+        opacity: 0;
+        transition: 1s;
+        transform: translateY(100px);
+        color: #18191a;
+    }
+}
