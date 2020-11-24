@@ -16,8 +16,4 @@ window.addEventListener('DOMContentLoaded', function () {
             document.querySelector('.menu-mobile').classList.toggle('menu-mobile__active');
         });
     };
-
-
-
-
 });
