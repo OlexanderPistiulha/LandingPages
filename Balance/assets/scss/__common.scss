@@ -6,7 +6,7 @@
 body,html{
     width: 100%;
     box-sizing: border-box;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     overflow-x: hidden;
 }
 a,
@@ -17,7 +17,7 @@ h3,
 h4,
 h5 {
     font-family: 'Open Sans', sans-serif;
-    color: $primary-color;
+    color: $tc-primary;
 }
 
 a {

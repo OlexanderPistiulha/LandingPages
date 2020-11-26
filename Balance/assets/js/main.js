@@ -1,19 +1,32 @@
 window.addEventListener('DOMContentLoaded', function () {
     'use strict';
 
-    // for menu burger
-    clickBurger();
+    // for menu burger================================================================= 
 
-    function clickBurger() {
+    let burger = document.querySelector('.burger');
+    let header = document.querySelector('.header__wrapp');
 
-        let burger = document.querySelector('.burger');
-        let header = document.querySelector('.header');
+    burger.addEventListener('click', function () {
+        burger.classList.toggle('burger-active');
+        header.classList.toggle('header__wrapp-mobile-active');
+    });
 
-        burger.addEventListener('click', function () {
-            burger.classList.toggle('burger-active');
-            header.classList.toggle('header__mobile-active');
+    // header adhere to scroll =========================================================
 
-            // document.querySelector('.menu-mobile').classList.toggle('menu-mobile__active');
-        });
-    };
+    let headerAdhere = document.querySelector('.header__wrapp');
+   
+    window.addEventListener('scroll', function () {
+        let scrolled = document.documentElement.scrollTop;
+
+        if (scrolled > 10) {          
+            headerAdhere.classList.remove('header__wrapp-scroll-off');
+            headerAdhere.classList.add('header__wrapp-scroll-on');
+
+        } else if (scrolled < 10) {           
+            headerAdhere.classList.remove('header__wrapp-scroll-on');
+            headerAdhere.classList.add('header__wrapp-scroll-off');
+        }
+    });
+  
+
 });
