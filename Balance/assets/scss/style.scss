@@ -150,10 +150,6 @@
 
 //==============================================first screen==============================================
 .first-screen {
-    // position: relative;
-
-    // transform-style: preserve-3d;
-    // transform: translateZ(-1);
 
     &__body {
         display: flex;
@@ -188,7 +184,7 @@
         justify-content: center;
     }
 
-    &__img {     
+    &__img {
         position: relative;
         z-index: 10;
         width: 600px;
@@ -210,7 +206,7 @@
         }
     }
 
-    &__brush {      
+    &__brush {
         position: absolute;
         width: 100%;
         top: 0;
@@ -218,7 +214,7 @@
         z-index: 1;
     }
 
-    &__leaf{
+    &__leaf {
         position: absolute;
         width: 25%;
         top: 75%;
@@ -281,4 +277,138 @@
     }
 
     &__button {}
+}
+
+// ===================================pregnant screen===================================
+
+.pregnant {
+    background-image: url(../img/pregnant-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 80%;
+
+    &__body {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 100vh;
+        padding: 100px 0;
+
+        @media screen and (max-width: 900px) {
+            padding: 40px 0;
+        }
+    }
+
+    &__content {
+        width: 60%;
+
+        @media screen and (max-width: 1000px) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+// ===================================programs-screen===================================
+
+.programs {
+    background-color: #fff;
+    position: relative;
+
+    &__body {
+        padding: 100px 0;
+
+        @media screen and (max-width: 900px) {
+            padding: 40px 0;
+        }
+    }
+
+    &__content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        flex: 1;
+        min-width: 300px;
+        text-align: center;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-bottom: 30px;
+    }
+
+    &__img {
+        position: relative;
+        height: 200px;
+        margin-bottom: 60px;
+    }
+
+    &__img-girl {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        z-index: 10;
+        transform: translateX(-50%);
+    }
+
+    &__img-brush {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        z-index: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        font-size: 25px;
+        font-weight: 700;
+        color: $tc-primary;
+
+        @media screen and (max-width: 1440px) {
+            font-size: 20px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 20.9px;
+        font-weight: 400;
+
+        @media screen and (max-width: 1440px) {
+            font-size: 18px;
+        }
+    }
+}
+
+// =====================================join screen=====================================
+
+.join {
+    background-image: url(../img/join-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 20%;
+
+    &__body {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        min-height: 100vh;
+        padding: 100px 0;
+
+        @media screen and (max-width: 900px) {
+            padding: 40px 0;
+        }
+    }
+
+    &__content {
+        width: 50%;
+
+        @media screen and (max-width: 1000px) {
+            width: 100%;
+            text-align: center;
+        }
+    }
 }

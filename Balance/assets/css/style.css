@@ -136,6 +136,64 @@ ul {
           transform: rotate(-45deg);
 }
 
+.title {
+  font-size: 75px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  margin-bottom: 66px;
+}
+
+@media screen and (max-width: 1536px) {
+  .title {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .title {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .title {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .title {
+    font-size: 30px;
+  }
+}
+
+.title__dark {
+  color: #484f5b;
+}
+
+.subtitle {
+  font-size: 20.9px;
+  line-height: 33px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #484f5b;
+  margin-bottom: 66px;
+}
+
+@media screen and (max-width: 1536px) {
+  .subtitle {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+}
+
 .conteiner {
   width: 100%;
   max-width: 1660px;
@@ -500,6 +558,182 @@ ul {
   .offer__subtitle {
     font-size: 18px;
     margin-bottom: 30px;
+  }
+}
+
+.pregnant {
+  background-image: url(../img/pregnant-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 80%;
+}
+
+.pregnant__body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  padding: 100px 0;
+}
+
+@media screen and (max-width: 900px) {
+  .pregnant__body {
+    padding: 40px 0;
+  }
+}
+
+.pregnant__content {
+  width: 60%;
+}
+
+@media screen and (max-width: 1000px) {
+  .pregnant__content {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.programs {
+  background-color: #fff;
+  position: relative;
+}
+
+.programs__body {
+  padding: 100px 0;
+}
+
+@media screen and (max-width: 900px) {
+  .programs__body {
+    padding: 40px 0;
+  }
+}
+
+.programs__content {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.programs__item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 300px;
+  text-align: center;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 30px;
+}
+
+.programs__img {
+  position: relative;
+  height: 200px;
+  margin-bottom: 60px;
+}
+
+.programs__img-girl {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  z-index: 10;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.programs__img-brush {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  z-index: 1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.programs__title {
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #484f5b;
+}
+
+@media screen and (max-width: 1440px) {
+  .programs__title {
+    font-size: 20px;
+  }
+}
+
+.programs__subtitle {
+  font-size: 20.9px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1440px) {
+  .programs__subtitle {
+    font-size: 18px;
+  }
+}
+
+.join {
+  background-image: url(../img/join-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 20%;
+}
+
+.join__body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  padding: 100px 0;
+}
+
+@media screen and (max-width: 900px) {
+  .join__body {
+    padding: 40px 0;
+  }
+}
+
+.join__content {
+  width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .join__content {
+    width: 100%;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
