@@ -86,6 +86,7 @@ button {
   color: #484f5b;
   background-color: #e6c8c3;
   margin-bottom: 66px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1536px) {
@@ -488,6 +489,10 @@ button {
     max-width: 90px;
     max-height: 90px;
   }
+}
+
+.logo__footer {
+  margin-bottom: 30px;
 }
 
 .menu {
@@ -1317,5 +1322,105 @@ button {
 
 .form__textarea {
   min-height: 160px;
+}
+
+.footer {
+  background-color: #484f5b;
+  padding: 60px 0;
+}
+
+.footer__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.column {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px;
+}
+
+@media screen and (max-width: 550px) {
+  .column {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.column__nav {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.column__big {
+  width: 188px;
+  min-width: 188px;
+}
+
+@media screen and (max-width: 550px) {
+  .column__big {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.column__company-name {
+  font-size: 25.4px;
+  line-height: 25px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.column__text {
+  font-size: 16.9px;
+  line-height: 29px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.column__small {
+  width: 100px;
+}
+
+@media screen and (max-width: 550px) {
+  .column__small {
+    width: 100%;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */

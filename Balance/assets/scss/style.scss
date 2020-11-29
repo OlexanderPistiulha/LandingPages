@@ -105,6 +105,10 @@
             max-height: 90px;
         }
     }
+
+    &__footer {
+        margin-bottom: 30px;
+    }
 }
 
 // ----------------------menu----------------------
@@ -630,7 +634,7 @@
         flex-direction: column;
 
         @media screen and (max-width: 100px) {
-           width: 100%;
+            width: 100%;
         }
     }
 }
@@ -657,17 +661,90 @@
         margin-bottom: 33px;
 
         @media screen and (max-width: 550px) {
-          font-size: 18px;
-          padding: 15px 30px;
-          margin-bottom: 30px;
-         }
+            font-size: 18px;
+            padding: 15px 30px;
+            margin-bottom: 30px;
+        }
 
         &::placeholder {
             color: $tc-form-placeholder;
         }
     }
 
-    &__textarea {     
-        min-height: 160px;      
+    &__textarea {
+        min-height: 160px;
+    }
+}
+
+// ==============================================footer==============================================
+.footer {
+    background-color: #484f5b;
+    padding: 60px 0;
+
+    &__body {}
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-wrap: wrap;
+
+    }
+}
+
+.column {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 20px;
+
+    @media screen and (max-width: 550px) {
+        // flex: 1;
+        align-items: center;
+    }
+
+    &__nav {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+        font-weight: 400;
+    }
+
+    &__big {
+        width: 188px;
+        min-width: 188px;
+
+        @media screen and (max-width: 550px) {
+            width: 100%;
+            text-align: center;
+        }
+
+    }
+
+    &__company-name {
+        font-size: 25.4px;
+        line-height: 25px;
+        font-weight: 600;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-size: 16.9px;
+        line-height: 29px;
+        font-weight: 500;
+        color: #ffffff;
+    }
+
+    &__small {
+        width: 100px;
+
+        @media screen and (max-width: 550px) {
+            width: 100%;
+            text-align: center;
+        }
     }
 }
