@@ -44,6 +44,40 @@ ul {
   padding-left: 0;
 }
 
+input,
+textarea {
+  outline: none;
+}
+
+input:active,
+textarea:active {
+  outline: none;
+}
+
+:focus {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+textarea {
+  resize: horizontal;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
 .button {
   display: inline-block;
   font-size: 24px;
@@ -209,7 +243,6 @@ ul {
 
 .subtitle__center {
   text-align: center;
-  width: 80%;
   margin: 0 auto 30px auto;
 }
 
@@ -1167,5 +1200,122 @@ ul {
     width: 90%;
     text-align: center;
   }
+}
+
+.touch {
+  background-color: #fff;
+}
+
+.touch__body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  padding: 100px 0;
+}
+
+@media screen and (max-width: 900px) {
+  .touch__body {
+    padding: 40px 0;
+  }
+}
+
+.touch__content {
+  width: 80%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 100px) {
+  .touch__content {
+    width: 100%;
+  }
+}
+
+.form {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__input {
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  padding: 20px 40px;
+  background-color: #efefef;
+  border: 1.5px solid #b0b0b0;
+  font-size: 20.9px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: #484f5b;
+  margin-bottom: 33px;
+}
+
+@media screen and (max-width: 550px) {
+  .form__input {
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.form__input::-webkit-input-placeholder {
+  color: #b0b0b0;
+}
+
+.form__input:-ms-input-placeholder {
+  color: #b0b0b0;
+}
+
+.form__input::-ms-input-placeholder {
+  color: #b0b0b0;
+}
+
+.form__input::placeholder {
+  color: #b0b0b0;
+}
+
+.form__textarea {
+  min-height: 160px;
 }
 /*# sourceMappingURL=style.css.map */
