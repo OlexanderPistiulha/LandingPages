@@ -18,7 +18,6 @@
 
 // ==============================================header==============================================
 .header {
-
     &__wrapp {
         position: fixed;
         z-index: 3000;
@@ -154,6 +153,8 @@
 
 //==============================================first screen==============================================
 .first-screen {
+    position: relative;
+    z-index: 50;
 
     &__body {
         display: flex;
@@ -286,6 +287,8 @@
 // ===================================pregnant screen===================================
 
 .pregnant {
+    // position: relative;
+    // z-index: 100;
     background-image: url(../img/pregnant-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -390,6 +393,7 @@
 // ====================================photo screen====================================
 .photo {
     background-color: #fff;
+    position: relative;
 
     &__body {
         display: flex;
@@ -445,6 +449,8 @@
 
     &__content {
         width: 50%;
+        position: relative;
+        z-index: 100;
 
         @media screen and (max-width: 1000px) {
             width: 100%;
@@ -457,6 +463,7 @@
 
 .galery {
     background-color: #fff;
+    position: relative;
 
     &__body {
         display: flex;
@@ -471,6 +478,8 @@
     }
 
     &__content {
+        position: relative;
+        z-index: 100;
         width: 100%;
 
         @media screen and (max-width: 1000px) {
@@ -489,6 +498,7 @@
     &__item {
         flex: 1;
         position: relative;
+        z-index: 100;
         top: 0;
         left: 0;
         max-width: 350px;
@@ -521,6 +531,7 @@
         box-shadow: 11px 18px 23px 1px rgba(11, 12, 12, 0.1);
         transform: rotateY(0deg);
         transition: .5s;
+        background-color: #fff;
     }
 
     &__back {
@@ -538,6 +549,7 @@
         box-shadow: 11px 18px 23px 1px rgba(11, 12, 12, 0.1);
         transform: rotateY(180deg);
         transition: 0.5s;
+        background-color: #fff;
     }
 
     &__img {
@@ -613,6 +625,7 @@
 
 .touch {
     background-color: #fff;
+    position: relative;
 
     &__body {
         display: flex;
@@ -632,6 +645,8 @@
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
+        position: relative;
+        z-index: 100;
 
         @media screen and (max-width: 100px) {
             width: 100%;
@@ -640,11 +655,13 @@
 }
 
 .form {
+    position: relative;
+    z-index: 100;
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column;   
 
 
     &__input {
@@ -699,7 +716,7 @@
     flex-direction: column;
     margin: 20px;
 
-    @media screen and (max-width: 550px) {     
+    @media screen and (max-width: 550px) {
         align-items: center;
     }
 
@@ -745,5 +762,94 @@
             width: 100%;
             text-align: center;
         }
+    }
+}
+
+// =======================================scenery elements=================================
+.position {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    z-index: 5;
+
+    @media screen and (max-width: 700px) {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.top {
+    top: 0;
+}
+
+.half-top {
+    top: 50%;
+}
+
+.right {
+    right: 0;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.half-bottom {
+    bottom: -50%;
+}
+
+.left {
+    left: 0;
+}
+
+.layer {
+    position: absolute;
+
+    &__one {
+        z-index: 3;
+    }
+
+    &__two {
+        z-index: 2;
+    }
+
+    &__three {
+        z-index: 1;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.first-screen-display-t-r {
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
+}
+
+.join-screen-title-display-t-l {
+    width: 300px;
+    left: -30px;
+
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
+}
+
+.galery-screen-display-b-r {
+    width: 400px;
+
+    @media screen and (max-width: 900px) {
+        width: 200px;
+    }
+}
+
+.galery-screen-display-t-l {
+    width: 300px;
+
+    @media screen and (max-width: 550px) {
+        display: none;
     }
 }

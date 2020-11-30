@@ -8,16 +8,14 @@
 
 html {
   height: 100%;
-  overflow: hidden;
-  overflow-y: scroll;
 }
 
 body {
+  position: relative;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: white;
-  overflow-x: hidden;
 }
 
 a,
@@ -181,6 +179,8 @@ button {
 }
 
 .title {
+  position: relative;
+  z-index: 100;
   font-size: 75px;
   line-height: 1.2;
   font-weight: 700;
@@ -254,6 +254,7 @@ button {
   background-color: #fdfcfc;
   -webkit-box-shadow: 13px 15px 43px 0px rgba(11, 12, 12, 0.58);
           box-shadow: 13px 15px 43px 0px rgba(11, 12, 12, 0.58);
+  z-index: 100;
 }
 
 @media screen and (max-width: 1000px) {
@@ -290,6 +291,7 @@ button {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: 101;
 }
 
 .social-icons {
@@ -553,6 +555,11 @@ button {
   .menu__link {
     font-size: 18px;
   }
+}
+
+.first-screen {
+  position: relative;
+  z-index: 50;
 }
 
 .first-screen__body {
@@ -872,6 +879,7 @@ button {
 
 .photo {
   background-color: #fff;
+  position: relative;
 }
 
 .photo__body {
@@ -965,6 +973,8 @@ button {
 
 .join__content {
   width: 50%;
+  position: relative;
+  z-index: 100;
 }
 
 @media screen and (max-width: 1000px) {
@@ -976,6 +986,7 @@ button {
 
 .galery {
   background-color: #fff;
+  position: relative;
 }
 
 .galery__body {
@@ -1002,6 +1013,8 @@ button {
 }
 
 .galery__content {
+  position: relative;
+  z-index: 100;
   width: 100%;
 }
 
@@ -1036,6 +1049,7 @@ button {
       -ms-flex: 1;
           flex: 1;
   position: relative;
+  z-index: 100;
   top: 0;
   left: 0;
   max-width: 350px;
@@ -1077,6 +1091,7 @@ button {
           transform: rotateY(0deg);
   -webkit-transition: .5s;
   transition: .5s;
+  background-color: #fff;
 }
 
 .galery__back {
@@ -1108,6 +1123,7 @@ button {
           transform: rotateY(180deg);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  background-color: #fff;
 }
 
 .galery__img {
@@ -1209,6 +1225,7 @@ button {
 
 .touch {
   background-color: #fff;
+  position: relative;
 }
 
 .touch__body {
@@ -1253,6 +1270,8 @@ button {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+  z-index: 100;
 }
 
 @media screen and (max-width: 100px) {
@@ -1262,6 +1281,8 @@ button {
 }
 
 .form {
+  position: relative;
+  z-index: 100;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1421,6 +1442,102 @@ button {
   .column__small {
     width: 100%;
     text-align: center;
+  }
+}
+
+.position {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  z-index: 5;
+}
+
+@media screen and (max-width: 700px) {
+  .position {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.top {
+  top: 0;
+}
+
+.half-top {
+  top: 50%;
+}
+
+.right {
+  right: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.half-bottom {
+  bottom: -50%;
+}
+
+.left {
+  left: 0;
+}
+
+.layer {
+  position: absolute;
+}
+
+.layer__one {
+  z-index: 3;
+}
+
+.layer__two {
+  z-index: 2;
+}
+
+.layer__three {
+  z-index: 1;
+}
+
+.layer__img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .first-screen-display-t-r {
+    display: none;
+  }
+}
+
+.join-screen-title-display-t-l {
+  width: 300px;
+  left: -30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .join-screen-title-display-t-l {
+    display: none;
+  }
+}
+
+.galery-screen-display-b-r {
+  width: 400px;
+}
+
+@media screen and (max-width: 900px) {
+  .galery-screen-display-b-r {
+    width: 200px;
+  }
+}
+
+.galery-screen-display-t-l {
+  width: 300px;
+}
+
+@media screen and (max-width: 550px) {
+  .galery-screen-display-t-l {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
