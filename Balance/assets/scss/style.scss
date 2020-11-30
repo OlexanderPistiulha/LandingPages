@@ -699,8 +699,7 @@
     flex-direction: column;
     margin: 20px;
 
-    @media screen and (max-width: 550px) {
-        // flex: 1;
+    @media screen and (max-width: 550px) {     
         align-items: center;
     }
 
