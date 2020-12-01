@@ -5,15 +5,14 @@
 }
 html{
     height: 100%;
-    // overflow: hidden;
-    // overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 body{
     position: relative;
     width: 100%;
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
-    // overflow-x: hidden;   
+    scroll-behavior: smooth;
     
 }
 a,
