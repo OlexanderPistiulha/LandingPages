@@ -10,60 +10,6 @@ window.addEventListener('DOMContentLoaded', function () {
         header.classList.toggle('header__wrapp-mobile-active');
     });
 
-
-    // for menu active link============================================================
-    const linksMenu = document.querySelectorAll('.menu__link');
-    const linksTarget = document.querySelectorAll('.link-name');
-    let linkForMenu = [];
-    let linkForTarget = [];
-
-    function CheckCompatibility() {
-        linksMenu.forEach(link => {
-            linkForMenu.push(link.hash.substring(1));
-        });
-
-        linksTarget.forEach(link => {
-            linkForTarget.push(link.getAttribute('name'));
-        });
-
-        for (let i = 0; i < linksMenu.length; i++) {
-            for (let k = 0; k < linksMenu.length; k++) {
-                if ( linkForMenu[i].pageYOffse == linkForTarget[k].pageYOffse) {
-                    console.log('true');
-                } else {
-
-                    console.log('false');
-                    // linkForMenu[i].pageYOffse;
-                    // linkForTarget[k].pageYOffse;
-                }
-            }
-        }
-    }
-
-    window.addEventListener('scroll', CheckCompatibility());  
-
-    // alert( 'Текущая прокрутка сверху: ' + window.pageYOffset );
-
-
-    // [0].hash.substring(1);
-
-    // const links = document.querySelectorAll('.links');
-    // const sections = document.querySelectorAll('section');
-
-    // function changeLinkState() {
-    //     let index = sections.length;
-
-    //     while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
-
-    //     links.forEach((link) => link.classList.remove('active'));
-    //     links[index].classList.add('active');
-    // }
-
-    // changeLinkState();
-    // window.addEventListener('scroll', changeLinkState);
-
-
-
     // header adhere to scroll =========================================================
 
     let headerAdhere = document.querySelector('.header__wrapp');
