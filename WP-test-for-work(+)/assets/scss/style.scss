@@ -413,6 +413,7 @@
 
     &-hight {
         max-width: 260px;
+        align-self: stretch;
         flex-direction: column;
 
         &:nth-child(1) {
