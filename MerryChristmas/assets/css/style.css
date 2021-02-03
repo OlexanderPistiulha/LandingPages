@@ -75,6 +75,12 @@ button {
   padding: 0 60px;
 }
 
+@media screen and (max-width: 1000px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
 .section {
   background-image: url(../img/main-bg.png), -webkit-gradient(linear, left bottom, right top, from(#353544), to(#39405f));
   background-image: url(../img/main-bg.png), linear-gradient(to top right, #353544, #39405f);
@@ -82,6 +88,14 @@ button {
   background-repeat: no-repeat;
   background-position: 70%;
   width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .section {
+    background-image: url(../img/main-bg-mobile.png), radial-gradient(ellipse at center, #3b4363, #292933);
+    background-position: 50% 0%;
+    background-size: cover;
+  }
 }
 
 .section__body {
@@ -102,6 +116,16 @@ button {
   position: relative;
 }
 
+@media screen and (max-width: 1000px) {
+  .section__body {
+    width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .header {
   position: absolute;
   width: 100%;
@@ -120,6 +144,15 @@ button {
   top: 50px;
 }
 
+@media screen and (max-width: 1000px) {
+  .header {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .logo {
   width: 6.747258926061288%;
   max-width: 240px;
@@ -135,9 +168,15 @@ button {
 
 .adress p {
   font-family: Poppins;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 400;
   color: #ffffff;
+}
+
+@media screen and (max-width: 1400px) {
+  .adress p {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -175,32 +214,75 @@ button {
 .social-icons__icon i {
   font-family: FontAwesome;
   font-style: normal;
-  font-size: 22px;
+  font-size: 24px;
   color: #fff;
+}
+
+@media screen and (max-width: 1400px) {
+  .social-icons__icon i {
+    font-size: 22px;
+  }
 }
 
 .content {
   padding-top: 130px;
 }
 
+@media screen and (max-width: 1000px) {
+  .content {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
+
 .title {
   font-family: Poppins;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 400;
   text-transform: uppercase;
   color: #e5d19c;
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 1400px) {
+  .title {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .title {
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
 .title-img {
-  width: 32.0775934776497%;
+  width: 50%;
   min-width: 280px;
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 1400px) {
+  .title-img {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .title-img {
+    display: block;
+    margin: 0 auto 40px auto;
+  }
+}
+
 .subtitle {
   font-family: Poppins;
-  font-size: 25px;
+  font-size: 40px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -208,14 +290,42 @@ button {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 1400px) {
+  .subtitle {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .subtitle {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
 .time-title {
   font-family: Poppins;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #e5d19c;
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1400px) {
+  .time-title {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .time-title {
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .site-link {
@@ -224,11 +334,25 @@ button {
 
 .site-link a {
   font-family: Poppins;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #fefefe;
+}
+
+@media screen and (max-width: 1400px) {
+  .site-link a {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .site-link {
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .text {
